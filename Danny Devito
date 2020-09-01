@@ -1,0 +1,74 @@
+using System;
+
+namespace MadLibs
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      /*
+      This program ... This is a program that lets you help write a story.
+      Author: ... Conner Smith
+      */
+
+
+      // Let the user know that the program is starting:
+Console.WriteLine("The code is now running");
+
+      // Give the Mad Lib a title:
+      string title = "Code";
+
+      Console.WriteLine(title);
+      // Define user input and variables:
+Console.WriteLine("Enter a name");
+String name = Console.ReadLine();
+
+//Adjectives
+Console.WriteLine("Give me an Adjective");
+String adjectiveOne = Console.ReadLine();
+Console.WriteLine("Give me another Adjective");
+String adjectiveTwo = Console.ReadLine();
+Console.WriteLine("One more Adjective");
+String adjectiveThree = Console.ReadLine();
+
+//Verbs
+Console.WriteLine("Give me a Verb");
+String verbOne = Console.ReadLine();
+
+//Nouns
+Console.WriteLine("Give me a Noun");
+String nounOne = Console.ReadLine();
+Console.WriteLine("One more Noun");
+String nounTwo = Console.ReadLine();
+
+//Other Things
+Console.WriteLine("Give me An animal");
+String animalOne = Console.ReadLine();
+
+Console.WriteLine("Give me a food");
+String foodOne = Console.ReadLine();
+
+Console.WriteLine("Give me a fruit");
+String fruitOne = Console.ReadLine();
+
+Console.WriteLine("Give me a superhero");
+String superheroOne = Console.ReadLine();
+
+Console.WriteLine("Give me a country");
+String countryOne = Console.ReadLine();
+
+Console.WriteLine("Give me a dessert");
+String dessertOne = Console.ReadLine();
+
+Console.WriteLine("Give me a year");
+String yearOne = Console.ReadLine();
+      // The template for the story:
+
+      string story = $"This morning {name} woke up feeling {adjectiveOne}. 'It is going to be a {adjectiveTwo} day!' Outside, a bunch of {animalOne}s were protesting to keep {foodOne} in stores. They began to {verbOne} to the rhythm of the {nounOne}, which made all the {fruitOne}s very {adjectiveThree}. Concerned, {name} texted {superheroOne}, who flew {name} to {countryOne} and dropped {name} in a puddle of frozen {dessertOne}. {name} woke up in the year {yearOne}, in a world where {nounTwo}s ruled the world.";
+
+
+      // Print the story:
+Console.WriteLine(story);
+    }
+  }
+}
